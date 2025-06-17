@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+    id="WebApp_ID" version="3.0">
+
+    <display-name>BookstoreWebApp</display-name>
+
+    <context-param>
+    <param-name>jdbcURL</param-name>
+    <param-value>jdbc:mysql://localhost:3306/Bookstore?useSSL=false&amp;serverTimezone=UTC</param-value>
+    </context-param>
+
+  <context-param>
+    <param-name>jdbcUsername</param-name>
+    <param-value>root</param-value>
+  </context-param>
+  <context-param>
+    <param-name>jdbcPassword</param-name>
+    <param-value>2143</param-value> 
+  </context-param>
+
+    <error-page>
+        <exception-type>java.lang.Exception</exception-type>
+        <location>/Error.jsp</location>
+    </error-page>
+
+</web-app>
